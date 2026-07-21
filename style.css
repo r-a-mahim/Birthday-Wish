@@ -939,7 +939,7 @@ will-change: transform;
     font-size: 25px;
     text-shadow: 0 0 8px #FF7882;
 }
-.boxMail .boxMail-container .card2:hover h3{
+.boxMail .boxMail-container .card2 h3{
     animation: texth3 3s forwards;
     animation-delay: 2s;
     transition: 1s;
@@ -963,7 +963,7 @@ will-change: transform;
     font-size: 16.5px;
     opacity: 0;
 }
-.boxMail .boxMail-container .card2:hover h2{
+.boxMail .boxMail-container .card2 h2{
     animation: texth2 2s forwards;
     animation-delay: 4s;
     transition: 1s;
@@ -983,7 +983,7 @@ will-change: transform;
     opacity: 0;
     transition: 1s;
 }
-.boxMail .boxMail-container .card2 .card2-content:hover .imageCute2{
+.boxMail .boxMail-container .card2 .card2-content .imageCute2{
     animation: cute3 1s linear infinite,
                 cute4 3s 2s forwards;
     animation-delay: 2s;
