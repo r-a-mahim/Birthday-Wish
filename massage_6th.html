@@ -23,81 +23,6 @@
       box-shadow: 0 25px 60px rgba(121, 0, 65, 0.25);
     }
 
-<<<<<<< HEAD
-    /* ⭕ Circle Image (Size Increased) */
-    .circle-img-container {
-      width: 95px;
-      height: 95px;
-      border-radius: 50%;
-      padding: 3.5px;
-      background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff69b4);
-      box-shadow: 0 0 25px rgba(255, 105, 180, 0.7);
-      animation: pulseGlow 2.5s infinite alternate;
-      flex-shrink: 0;
-=======
-    /* ⭕ Circle Image with Glowing Animation */
-    .circle-img-container {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      padding: 3px;
-      background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff69b4);
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
-      animation: pulseGlow 2.5s infinite alternate;
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
-    }
-
-    .circle-img-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-<<<<<<< HEAD
-      border: 2.5px solid white;
-    }
-
-    @keyframes pulseGlow {
-      0% { transform: scale(1); box-shadow: 0 0 12px rgba(255, 105, 180, 0.4); }
-      100% { transform: scale(1.06); box-shadow: 0 0 30px rgba(255, 20, 147, 0.9); }
-    }
-
-    /* 🟥 Red Rectangular Mini Box (Size Increased) */
-    .empty-mini-box {
-      border: 2px solid #ff4d8d;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 16px;
-      padding: 10px 16px;
-      min-height: 85px;
-      width: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: inset 0 2px 6px rgba(0,0,0,0.06);
-      flex-shrink: 0;
-=======
-      border: 2px solid white;
-    }
-
-    @keyframes pulseGlow {
-      0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 105, 180, 0.4); }
-      100% { transform: scale(1.06); box-shadow: 0 0 25px rgba(255, 20, 147, 0.8); }
-    }
-
-    /* 🟥 Red Rectangular Mini Box (Left Side - Empty for your content) */
-    .empty-mini-box {
-      border: 2px solid #ff4d8d;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 12px;
-      padding: 8px 12px;
-      min-height: 60px;
-      width: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
-    }
-
     /* Floating Hearts Animation */
     .heart {
       position: fixed;
@@ -150,19 +75,7 @@
       50% { opacity: 0; }
     }
 
-<<<<<<< HEAD
-    /* Smooth Pop Animation for Card Open */
-=======
-    /* Smooth Pop/Fade Animation for Card Open */
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
-    .modal-enter {
-      animation: popModal 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-    }
-    @keyframes popModal {
-      from { opacity: 0; transform: scale(0.7) translateY(30px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-
+    /* Smooth Fade In Animation */
     .fade-in-up {
       animation: fadeInUp 0.8s ease forwards;
     }
@@ -173,13 +86,6 @@
   </style>
 </head>
 <body class="flex items-center justify-center p-4 relative text-gray-800 min-h-screen">
-
-<<<<<<< HEAD
-  <!-- Background Music Element -->
-=======
-  <!-- Background Music Element ("Mere Samne Wali Khirki Main" or your song) -->
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
-  <audio id="bgMusic" loop src="musics/mere_samne.mp3"></audio>
 
   <main class="relative z-10 w-full max-w-2xl my-auto">
     
@@ -193,55 +99,14 @@
       </button>
     </div>
 
-<<<<<<< HEAD
-    <!-- 2. Final Message Card (Hidden Initially) -->
-    <div id="cardSection" class="hidden glass rounded-[2.5rem] p-6 sm:p-10 text-center relative overflow-hidden transition-all duration-700 modal-enter">
+    <!-- 2. Final Message Card with Typewriter Effect -->
+    <div id="cardSection" class="hidden glass rounded-[2.5rem] p-6 sm:p-10 text-center relative overflow-hidden transition-all duration-700">
       
-      <!-- Top Layout: Left Box, Center Title & Cake, Right Circle Image -->
-      <div class="flex items-center justify-between w-full mb-4 px-1 gap-2">
-        
-        <!-- 🟥 Left Mini Box (Bigger Size) -->
-        <div class="empty-mini-box">
-          <span class="text-xs text-gray-500 italic font-medium">Your Content</span>
-        </div>
-
-        <!-- 🎂 Center Title & Cake -->
-        <div class="flex flex-col items-center text-center flex-grow px-2">
-          <h1 class="font-love text-3xl sm:text-4xl text-gray-900 drop-shadow-sm leading-tight">
-            Happy Birthday
-          </h1>
-          <div class="text-3xl mt-1 animate-pulse">🎂</div>
-        </div>
-
-        <!-- ⭕ Right Circle Image (Bigger Size) -->
-=======
-    <!-- 2. Final Message Card with Typewriter Effect (Hidden Initially) -->
-    <div id="cardSection" class="hidden glass rounded-[2.5rem] p-6 sm:p-10 text-center relative overflow-hidden transition-all duration-700 modal-enter">
-      
-      <!-- Top Layout: Empty Mini Box (Left) & Circle Image (Right) -->
-      <div class="flex items-center justify-between w-full mb-3 px-1">
-        
-        <!-- 🟥 Empty Mini Box (Left Red Rectangular area) -->
-        <div class="empty-mini-box">
-          <span class="text-xs text-gray-500 italic">Your Content</span>
-        </div>
-
-        <!-- ⭕ Circle Image with Animation (Right) -->
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
-        <div class="circle-img-container">
-          <img src="images/moon.jpeg" alt="Special Memory">
-        </div>
-
-<<<<<<< HEAD
-=======
-      </div>
-
       <!-- Top Title -->
       <div class="flex items-center justify-center gap-2 mb-4">
         <h1 class="font-love text-3xl sm:text-5xl text-gray-900 drop-shadow-sm">
           Happy Birthday My Love <span class="inline-block animate-pulse">🎂</span>
         </h1>
->>>>>>> 71ee3b6c16d294c497526964ed3ce1facf357308
       </div>
 
       <!-- Typewriter Letter Area -->
