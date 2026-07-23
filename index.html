@@ -83,9 +83,6 @@
   <div class="balloon bg-yellow-300 left-1/4 bottom-16" style="animation-delay:2s"></div>
   <div class="balloon bg-red-400 right-1/4 bottom-20" style="animation-delay:.5s"></div>
 
-  <!-- Background Music Element -->
-  <audio id="bgMusic" loop src="musics/song.m4a"></audio>
-
   <main class="relative z-10 w-full max-w-3xl">
     <div class="glass rounded-[2rem] p-6 sm:p-10 text-center min-h-[560px] flex items-center justify-center">
       <section class="w-full">
@@ -102,26 +99,6 @@
   </main>
 
   <script>
-  const bgMusic = document.getElementById('bgMusic');
-
-function goToNextPage(pageUrl) {
-  if (bgMusic) {
-    // ১. আগে গান চালু হবে
-    bgMusic.play().then(() => {
-      // ২. গান চালু সফল হলে ১ সেকেন্ড পর পরের পেজে যাবে
-      setTimeout(() => {
-        window.location.href = pageUrl;
-      }, 800);
-    }).catch(e => {
-      console.log("Audio play blocked", e);
-      // কোনো কারণে গান প্লে না হলেও যেন পেজ চেঞ্জ হয়
-      window.location.href = pageUrl;
-    });
-  } else {
-    window.location.href = pageUrl;
-  }
-}
-
     function createFloatingHearts() {
       setInterval(() => {
         const heart = document.createElement('div');
